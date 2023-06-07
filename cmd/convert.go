@@ -80,6 +80,8 @@ Examples:
 			profile = convert.ParseFolded(file)
 		} else if input == "perf" {
 			profile = convert.ParsePerf(cmd.Context(), file)
+		} else if input == "js" {
+			profile = convert.ParseJS(file)
 		} else {
 			panic("input type not supported: " + input)
 		}
